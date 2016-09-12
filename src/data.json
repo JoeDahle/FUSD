@@ -1,0 +1,14 @@
+{
+    "school": [
+        {
+            "id": 1,
+            "name": "anthem",
+            "abbr": "an",
+        },
+        {
+            "id": 2,
+            "name": "magma",
+            "abbr": "mg",
+        }
+    ]
+}
