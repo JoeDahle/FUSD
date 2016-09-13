@@ -1,14 +1,32 @@
 {
-    "school": [
-        {
-            "id": 1,
-            "name": "anthem",
-            "abbr": "an",
-        },
-        {
-            "id": 2,
-            "name": "magma",
-            "abbr": "mg",
-        }
-    ]
+  "school": [
+    {
+      "name": "Anthem K-8",
+      "listName": "anthem",
+      "id": 1,
+      "abbr": "an",
+      "path": "/an/Slider/wowslider.html"
+    },
+    {
+      "name": "Magma Ranch K-8",
+      "listName": "magma",
+      "id": 2,
+      "abbr": "mg",
+      "path": "/mg/Slider/wowslider.html"
+    },
+    {
+      "name": "Florence K-8",
+      "listName": "florencek8",
+      "id": 3,
+      "abbr": "fk8",
+      "path": "/fk8/Slider/wowslider.html"
+    },
+    {
+      "name": "Walker Butte K-8",
+      "listName": "walkerbutte",
+      "id": 4,
+      "abbr": "wb",
+      "path": "/wb/Slider/wowslider.html"
+    }
+  ]
 }
