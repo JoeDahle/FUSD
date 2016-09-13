@@ -8,18 +8,19 @@ let data = config;
 
 var App = React.createClass({
     render: function(){
-        return (
-            <main className="App_main">
-                <div className="App_main-step">{<StepComponent
-                  step={this.props.step}
-                  data={data} />}</div>
-            </main>);
+      return (
+        <main className="App_main">
+            <div className="App_main-step">{<StepComponent
+              step={this.props.step}
+              data={data} />}</div>
+        </main>
+      );
     }
 });
 
 document.addEventListener('DOMContentLoaded', function() {
   ReactDOM.render(
-      <App />,
+    <App />,
     document.getElementById('app')
   );
 });

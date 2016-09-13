@@ -18,6 +18,10 @@ var config = {
       test: /\.json$/,
       exclude: /node_modules/,
       loaders: ['json-loader']
+    },{
+      test: /\.sass$/,
+      exclude: /node_modules/,
+      loaders: ['style', 'css', 'sass']
     }]
   },
   resolverLoader: {
