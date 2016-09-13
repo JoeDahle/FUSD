@@ -11,16 +11,17 @@ var ContentComponent = React.createClass({
     },
     render: function(){
       let that = this;
-      let path;
+      var path;
       if(this.props.slideProp == 1) {
+        //   use map to create options
+        var schoolNodes = this.props.dataProp.school.map(function(data, i){
+            return <option key={"op-" + i} value={data.abbr}>{data.name}</option>
+        });
         return(
           <div>
             <h1>Choose Your School:</h1>
             <select onChange={this.change} value={this.state.value}>
-              <option value="an">Anthem</option>
-              <option value="mg">Magma Ranch</option>
-              <option value="fk8">Florence K-8</option>
-              <option value="wb">Walker Butte</option>
+              {schoolNodes}
             </select>
           </div>
         )
