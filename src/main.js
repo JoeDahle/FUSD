@@ -9,16 +9,13 @@ let data = config;
 var App = React.createClass({
     getDefaultProps: function(){
         return ({
-            school: 'walkerbutte',
-            step: 1,
+            school: 'walkerbutte'
         });
     },
     render: function(){
         return (
             <main className="App_main">
                 <div className="App_main-step">{<StepComponent step={this.props.step} />}</div>
-                <div className="App_main-prev">Prev</div>
-                <div className="App_main-next">Next</div>
                 <div className="App_main-content">{<ContentComponent dataProp={data} schoolProp={this.props.school} />}</div>
             </main>);
     }
