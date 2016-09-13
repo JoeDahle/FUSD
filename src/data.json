@@ -27,6 +27,55 @@
       "id": 4,
       "abbr": "wb",
       "path": "/wb/Slider/wowslider.html"
+    },
+    {
+      "name": "Circle Cross Ranch K-8",
+      "listName": "circlecross",
+      "id": 5,
+      "abbr": "ccr",
+      "path": "/ccr/Slider/wowslider.html"
+    },
+    {
+      "name": "Skyline Ranch K-8",
+      "listName": "skyline",
+      "id": 6,
+      "abbr": "sr",
+      "path": "/sr/Slider/wowslider.html"
+    },
+    {
+      "name": "Copper Basin K-8",
+      "listName": "copperbasin",
+      "id": 7,
+      "abbr": "cb",
+      "path": "/cb/Slider/wowslider.html"
+    },
+    {
+      "name": "San Tan Foothills",
+      "listName": "santanfoothills",
+      "id": 8,
+      "abbr": "stfhs",
+      "path": "/stfhs/Slider/wowslider.html"
+    },
+    {
+      "name": "San Tan Heights K-8",
+      "listName": "santanheights",
+      "id": 9,
+      "abbr": "sth",
+      "path": "/sth/Slider/wowslider.html"
+    },
+    {
+      "name": "Poston Butte",
+      "listName": "postonbutte",
+      "id": 10,
+      "abbr": "pbhs",
+      "path": "/pbhs/Slider/wowslider.html"
+    },
+    {
+      "name": "Florence High",
+      "listName": "florencehigh",
+      "id": 11,
+      "abbr": "fhs",
+      "path": "/fhs/Slider/wowslider.html"
     }
   ]
 }
