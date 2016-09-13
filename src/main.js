@@ -15,8 +15,9 @@ var App = React.createClass({
     render: function(){
         return (
             <main className="App_main">
-                <div className="App_main-step">{<StepComponent step={this.props.step} />}</div>
-                <div className="App_main-content">{<ContentComponent dataProp={data} schoolProp={this.props.school} />}</div>
+                <div className="App_main-step">{<StepComponent
+                  step={this.props.step}
+                  data={data} />}</div>
             </main>);
     }
 });

@@ -1,19 +1,17 @@
 import React from 'react';
+import ContentComponent from './ContentComponent';
 
 var StepComponent = React.createClass({
     getInitialState: function(){
-        return {step: 2};
+        return {step: 1};
     },
     handlePrevClick: function() {
       if(this.state.step > 1){
-        console.log(this.state.step);
-        // let newStep = this.state.step - 1;
         return this.setState({step: this.state.step - 1});
       }
     },
     handleNextClick: function() {
-      if(this.state.step < 3){
-        console.log(this.state.step);
+      if(this.state.step < 4){
         return this.setState({step: this.state.step + 1});
       }
     },
@@ -23,6 +21,9 @@ var StepComponent = React.createClass({
           <p className="Step_prev-p" onClick={this.handlePrevClick}>Prev</p>
           <p className="Step_current-p">Step: {this.state.step}</p>
           <p className="Step_next-p" onClick={this.handleNextClick}>Next</p>
+          <ContentComponent
+            dataProp={this.props.data}
+            slideProp={this.state.step} />
         </div>
       );
     }
