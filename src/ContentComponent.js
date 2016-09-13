@@ -2,15 +2,22 @@ import React from 'react';
 
 var ContentComponent = React.createClass({
     render: function(){
-        var schoolNodes = this.props.data.school.map(function(school, i){
-            console.log(school);
+      let that = this;
+      var schoolNodes = this.props.dataProp.school.map(function(data, i){
+          if(that.props.schoolProp == data.listName){
             return (
-                <div key={i}>{school[i].name}</div>
+              <div>
+                <h1 key={i}>{data.name}</h1>
+                <p>FTP Filepath: {data.path}</p>
+                <p>Server: '10.3.0.50'</p>
+                <p>Port: '21'</p>
+              </div>
             );
-        });
-        return (
-            <h1>{schoolNodes}</h1>
-        );
+          }
+      });
+      return (
+          <div>{schoolNodes}</div>
+      );
     }
 });
 

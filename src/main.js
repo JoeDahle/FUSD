@@ -9,7 +9,7 @@ let data = config;
 var App = React.createClass({
     getDefaultProps: function(){
         return ({
-            school: 'anthem',
+            school: 'walkerbutte',
             step: 1,
         });
     },
@@ -19,7 +19,7 @@ var App = React.createClass({
                 <div className="App_main-step">{<StepComponent step={this.props.step} />}</div>
                 <div className="App_main-prev">Prev</div>
                 <div className="App_main-next">Next</div>
-                <div className="App_main-content">{<ContentComponent data={data}  />}</div>
+                <div className="App_main-content">{<ContentComponent dataProp={data} schoolProp={this.props.school} />}</div>
             </main>);
     }
 });
