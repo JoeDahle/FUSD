@@ -7,11 +7,6 @@ import ContentComponent from './ContentComponent';
 let data = config;
 
 var App = React.createClass({
-    getDefaultProps: function(){
-        return ({
-            school: 'walkerbutte'
-        });
-    },
     render: function(){
         return (
             <main className="App_main">
