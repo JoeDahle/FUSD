@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import config from './data.json';
 import StepComponent from './StepComponent';
 import ContentComponent from './ContentComponent';
+import style from './sass/main.scss';
 
 let data = config;
 

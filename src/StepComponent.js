@@ -1,6 +1,8 @@
 import React from 'react';
 import ContentComponent from './ContentComponent';
 
+import style from './sass/step.scss';
+
 var StepComponent = React.createClass({
     getInitialState: function(){
         return {step: 1};
@@ -17,13 +19,20 @@ var StepComponent = React.createClass({
     },
     render: function(){
       return (
-        <div>
-          <p className="Step_prev-p" onClick={this.handlePrevClick}>Prev</p>
-          <p className="Step_current-p">Step: {this.state.step}</p>
-          <p className="Step_next-p" onClick={this.handleNextClick}>Next</p>
-          <ContentComponent
-            dataProp={this.props.data}
-            slideProp={this.state.step} />
+        <div className="Step_Component">
+          <div className="Step_Component-nav">
+            <span className="Step_prev-p" onClick={this.handlePrevClick}>
+              <i className="fa fa-arrow-left" aria-hidden="true">  </i>
+            </span>
+            <span className="Step_current-p">  Step:  {this.state.step}  </span>
+            <span className="Step_next-p" onClick={this.handleNextClick}>
+              <i className="fa fa-arrow-right" aria-hidden="true"></i>
+          </span>
+        </div>
+        <hr></hr>
+        <ContentComponent
+          dataProp={this.props.data}
+          slideProp={this.state.step} />
         </div>
       );
     }

@@ -1,0 +1,18 @@
+// Variables
+
+.Step_Component {
+    padding: 2em 4em 0 4em;
+    display: inline;
+}
+
+.Step_Component-nav {
+    position: relative;
+    width: 50%;
+    left: 39%;
+}
+
+.fa-arrow-right,
+.fa-arrow-left,
+.Step_current-p {
+    font-size: 2em;
+}

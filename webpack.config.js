@@ -19,8 +19,7 @@ var config = {
       exclude: /node_modules/,
       loaders: ['json-loader']
     },{
-      test: /\.sass$/,
-      exclude: /node_modules/,
+      test: /\.scss$/,
       loaders: ['style', 'css', 'sass']
     }]
   },

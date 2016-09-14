@@ -1,0 +1,24 @@
+$background-color: #4e7ec7;
+$content-background-color: #e1e1e1;
+$accent-color: #b0b0b0;
+$text-color: #000;
+
+body {
+    width: 100vh;
+    height: 100vh;
+    background-image: -webkit-radial-gradient(center, circle farthest-corner,
+        rgba(230,230,230,1) 0%, rgba(186,186,186,1) 100%);
+
+}
+
+.App_main {
+    background: $content-background-color;
+    width: 50%;
+    border: $accent-color 1px solid;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #1e1e1e;
+    position: fixed;
+    top: 5em;
+    left: 25%;
+    height: 20em;
+}
