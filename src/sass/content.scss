@@ -28,6 +28,60 @@ $select-padding: 4px;
     border-bottom: 1px solid orange;
 }
 
-.Content-step-2-header {
+.Content-step-2 > p {
+  width: 20em;
+  padding: 4px 10px;
+  background-color: #1e1e1e;
+  color: #e1e1e1;
+  border-radius: 4px;
+}
 
+.Content-step-3 {
+  width: 425px;
+}
+
+.Content-step-3-table-header {
+  text-align: left;
+  padding: 6px;
+  border-bottom: 1px solid black;
+  margin-bottom: 1.5em;
+}
+
+.Content-step-3-desc {
+  text-align: right;
+  padding: 6px;
+  border-bottom: 1px solid black;
+}
+
+.Content-step-4 {
+  width: 325px;
+  left: 20%;
+}
+
+.Content-step-4-caption {
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  width: 30em;
+  padding: 6px 10px;
+  background-color: #1e1e1e;
+  color: #e1e1e1;
+  border-radius: 4px;
+}
+
+.Content-step-4-header {
+  text-align: left;
+  padding: 6px;
+  border-bottom: 1px solid black;
+}
+
+.Content-step-4-desc {
+  text-align: right;
+  padding: 6px;
+  border-bottom: 1px solid black;
+}
+
+.Content-step-4-done {
+  font-size: 5em;
+  position: relative;
+  left: 1.2em;
 }

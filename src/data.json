@@ -1,49 +1,49 @@
 {
   "school": [
     {
-      "name": "Anthem K-8",
+      "name": "Anthem",
       "listName": "anthem",
       "id": 1,
       "abbr": "an",
       "path": "/an/Slider/wowslider.html"
     },
     {
-      "name": "Magma Ranch K-8",
+      "name": "Magma Ranch",
       "listName": "magma",
       "id": 2,
       "abbr": "mg",
       "path": "/mg/Slider/wowslider.html"
     },
     {
-      "name": "Florence K-8",
+      "name": "Florence",
       "listName": "florencek8",
       "id": 3,
       "abbr": "fk8",
       "path": "/fk8/Slider/wowslider.html"
     },
     {
-      "name": "Walker Butte K-8",
+      "name": "Walker Butte",
       "listName": "walkerbutte",
       "id": 4,
       "abbr": "wb",
       "path": "/wb/Slider/wowslider.html"
     },
     {
-      "name": "Circle Cross Ranch K-8",
+      "name": "Circle Cross Ranch",
       "listName": "circlecross",
       "id": 5,
       "abbr": "ccr",
       "path": "/ccr/Slider/wowslider.html"
     },
     {
-      "name": "Skyline Ranch K-8",
+      "name": "Skyline Ranch",
       "listName": "skyline",
       "id": 6,
       "abbr": "sr",
       "path": "/sr/Slider/wowslider.html"
     },
     {
-      "name": "Copper Basin K-8",
+      "name": "Copper Basin",
       "listName": "copperbasin",
       "id": 7,
       "abbr": "cb",
@@ -57,7 +57,7 @@
       "path": "/stfhs/Slider/wowslider.html"
     },
     {
-      "name": "San Tan Heights K-8",
+      "name": "San Tan Heights",
       "listName": "santanheights",
       "id": 9,
       "abbr": "sth",

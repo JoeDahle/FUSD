@@ -41,6 +41,8 @@ var ContentComponent = React.createClass({
               {schoolNodes}
             <p>Open the WOWSlider application</p>
             <p>Open the publish tab</p>
+            <p>Select the 'Publish to FTP' option</p>
+            <p>Select Edit</p>
           </div>
         );
       };
@@ -49,13 +51,25 @@ var ContentComponent = React.createClass({
           if(that.state.value == data.abbr){
             path = data.path;
             return (
-              <div className="Content-step-3" key={i}>
-                <h1 className="Content-step-3-header" key={"op-" + i}>{data.name}</h1>
-                <p>Location: {data.name}</p>
-                <p>Server: '10.3.0.50'</p>
-                <p>Port: '21'</p>
-                <p>Enter Your Username & Password</p>
-              </div>
+              <table className="Content-step-3">
+                <caption className="Content-step-3-header" key={"op-" + i}>{data.name}</caption>
+                <tr className="Content-step-3-table">
+                  <th className="Content-step-3-table-header">Location</th>
+                  <td className="Content-step-3-desc">{data.name}</td>
+                </tr>
+                <tr className="Content-step-3-table">
+                  <th className="Content-step-3-table-header">Server</th>
+                  <td className="Content-step-3-desc">10.3.0.50</td>
+                </tr>
+                <tr className="Content-step-3-table">
+                  <th className="Content-step-3-table-header">Port</th>
+                  <td className="Content-step-3-desc">21</td>
+                </tr>
+                <tr className="Content-step-3-table">
+                  <th className="Content-step-3-table-header">User/Pass</th>
+                  <td className="Content-step-3-desc">Your user/pass</td>
+                </tr>
+              </table>
             );
           }
         });
@@ -65,10 +79,14 @@ var ContentComponent = React.createClass({
       };
       if(this.props.slideProp == 4) {
         return (
-          <div className="Content-step-4">
-            <p>Select your newly created FTP site from the dropdown menu</p>
-            <p>Your FTP foler file path is: /{this.state.value}/Slider/wowslider.html</p>
-          </div>
+          <table className="Content-step-4">
+            <caption className="Content-step-4-caption">Select your newly created FTP site from the dropdown menu</caption>
+            <tr className="Content-step-4-table">
+              <th className="Content-step-4-header">FTP File Path</th>
+              <td className="Content-step-4-desc">/{this.state.value}/Slider/wowslider.html</td>
+            </tr>
+            <i className="fa fa-check-circle Content-step-4-done"><span>Done!</span></i>
+          </table>
         );
       }
     }
