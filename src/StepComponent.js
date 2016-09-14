@@ -24,7 +24,7 @@ var StepComponent = React.createClass({
             <span className="Step_prev-p" onClick={this.handlePrevClick}>
               <i className="fa fa-arrow-left" aria-hidden="true">  </i>
             </span>
-            <span className="Step_current-p">  Step:  {this.state.step}  </span>
+            <span className="Step_current-p">  Step  {this.state.step}  </span>
             <span className="Step_next-p" onClick={this.handleNextClick}>
               <i className="fa fa-arrow-right" aria-hidden="true"></i>
           </span>

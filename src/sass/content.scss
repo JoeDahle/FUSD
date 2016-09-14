@@ -1,3 +1,10 @@
+$color-black: "0,0,0";
+$select-background-color: transparent;
+$select-border-color: unquote("rgba(#{$color-black}, 0.12)") !default;
+$select-font-size: 16px;
+$select-color: unquote("rgba(#{$color-black}, 0.8)") !default;
+$select-padding: 4px;
+
 .Content-step-1,
 .Content-step-2,
 .Content-step-3,
@@ -9,8 +16,16 @@
 
 .Content-step-1-select {
     position: relative;
-    margin-top: 2.5em;
-    left: 9%;
+    margin-top: .1em;
+    left: 10%;
+    font-family: inherit;
+    background-color: transparent;
+    width: 8em;
+    padding: $select-padding 0;
+    font-size: $select-font-size;
+    color: $select-color;
+    border: none;
+    border-bottom: 1px solid orange;
 }
 
 .Content-step-2-header {

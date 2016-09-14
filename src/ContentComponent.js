@@ -22,6 +22,7 @@ var ContentComponent = React.createClass({
           <div className="Content-step-1">
             <h1 className="Content-step-1-header">Choose Your School</h1>
             <select className="Content-step-1-select" onChange={this.change} value={this.state.value}>
+              <option value="select">Select</option>
               {schoolNodes}
             </select>
           </div>
