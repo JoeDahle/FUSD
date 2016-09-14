@@ -13,7 +13,10 @@ var App = React.createClass({
         <main className="App_main">
             <div className="App_main-step">{<StepComponent
               step={this.props.step}
-              data={data} />}</div>
+              data={data} />}
+            </div>
+            
+            <span className="withLove">Made with <i className="fa fa-heart"></i> by Joe Dahle</span>
         </main>
       );
     }
