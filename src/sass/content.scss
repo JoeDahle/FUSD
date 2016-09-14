@@ -8,16 +8,19 @@ $select-padding: 4px;
 .Content-step-1,
 .Content-step-2,
 .Content-step-3,
-.Content-step-4 {
+.Content-step-4,
+.Content-step-5 {
     width: 100%;
     position: relative;
-    left: 30%;
+}
+
+.Content-step-1 {
+  text-align: center;
 }
 
 .Content-step-1-select {
     position: relative;
     margin-top: .1em;
-    left: 10%;
     font-family: inherit;
     background-color: transparent;
     width: 8em;
@@ -28,8 +31,14 @@ $select-padding: 4px;
     border-bottom: 1px solid orange;
 }
 
+.Content-step-2 {
+  text-align: center;
+}
+
 .Content-step-2 > p {
-  width: 20em;
+  position: relative;
+  width: 50%;
+  left: 25%;
   padding: 4px 10px;
   background-color: #1e1e1e;
   color: #e1e1e1;
@@ -37,7 +46,8 @@ $select-padding: 4px;
 }
 
 .Content-step-3 {
-  width: 425px;
+  padding: 20px 60px;
+  text-align: center;
 }
 
 .Content-step-3-table-header {
@@ -54,18 +64,26 @@ $select-padding: 4px;
 }
 
 .Content-step-4 {
-  width: 325px;
-  left: 20%;
+  width: 70%;
+  left: 15%;
+  text-align: center;
 }
 
 .Content-step-4-caption {
+  position: relative;
   margin-top: 2em;
   margin-bottom: 1.5em;
-  width: 30em;
+  width: 100%;
   padding: 6px 10px;
   background-color: #1e1e1e;
   color: #e1e1e1;
   border-radius: 4px;
+}
+
+.Content-step-4 > tbody {
+  position: relative;
+  left: 50%;
+  text-align: center;
 }
 
 .Content-step-4-header {
@@ -80,8 +98,16 @@ $select-padding: 4px;
   border-bottom: 1px solid black;
 }
 
-.Content-step-4-done {
-  font-size: 5em;
-  position: relative;
-  left: 1.2em;
+.Content-step-5 {
+  text-align: center;
+}
+
+.checkMark {
+    position: relative;
+    top: 30px;
+    font-size: 8em;
+}
+
+.Content-step-5-done {
+  font-size: 2em;
 }

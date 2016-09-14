@@ -103,7 +103,8 @@ var ContentComponent = React.createClass({
     if(this.props.slideProp == 5) {
       return (
         <div className="Content-step-5">
-          <i className="fa fa-check-circle"></i>
+          <p><i className="fa fa-check-circle checkMark"></i></p>
+          <p className="Content-step-5-done">Done!</p>
         </div>
       );
     }

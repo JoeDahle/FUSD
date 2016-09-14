@@ -13,7 +13,7 @@ var StepComponent = React.createClass({
       }
     },
     handleNextClick: function() {
-      if(this.state.step < 4){
+      if(this.state.step < 5){
         return this.setState({step: this.state.step + 1});
       }
     },
@@ -27,12 +27,16 @@ var StepComponent = React.createClass({
             <span className="Step_current-p">  Step  {this.state.step}  </span>
             <span className="Step_next-p" onClick={this.handleNextClick}>
               <i className="fa fa-arrow-right" aria-hidden="true"></i>
-          </span>
-        </div>
-        <hr></hr>
-        <ContentComponent
-          dataProp={this.props.data}
-          slideProp={this.state.step} />
+            </span>
+          </div>
+
+          <hr></hr>
+
+          <ContentComponent
+            dataProp={this.props.data}
+            slideProp={this.state.step} />
+
+          {this.checkMark}
         </div>
       );
     }
