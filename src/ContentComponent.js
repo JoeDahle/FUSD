@@ -22,7 +22,7 @@ var ContentComponent = React.createClass({
           <div className="Content-step-1">
             <h1 className="Content-step-1-header">Choose Your School</h1>
             <select className="Content-step-1-select" onChange={this.change} value={this.state.value}>
-              <option value="select">Select</option>
+              <option value="select" disabled>Select</option>
               {schoolNodes}
             </select>
           </div>
@@ -83,7 +83,7 @@ var ContentComponent = React.createClass({
             <caption className="Content-step-4-caption">Select your newly created FTP site from the dropdown menu</caption>
             <tr className="Content-step-4-table">
               <th className="Content-step-4-header">FTP File Path</th>
-              <td className="Content-step-4-desc">/{this.state.value}/Slider/wowslider.html</td>
+              <td className="Content-step-4-desc">/{this.state.value}/Slider/</td>
             </tr>
             <i className="fa fa-check-circle Content-step-4-done"><span>Done!</span></i>
           </table>
