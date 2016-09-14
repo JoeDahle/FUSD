@@ -95,7 +95,7 @@ var ContentComponent = React.createClass({
       return (
         <div>
           {schoolNodes}
-          <button className="button" onClick={this.handleNextClick}>Next</button>
+          <button className="button button-3" onClick={this.handleNextClick}>Next</button>
         </div>
       );
     }
@@ -114,7 +114,7 @@ var ContentComponent = React.createClass({
             </tbody>
           </table>
           <p>Click 'Apply/Publish'</p>
-          <button className="button" onClick={this.handleNextClick}>Next</button>
+          <button className="button button-4" onClick={this.handleNextClick}>Next</button>
         </div>
       );
     }

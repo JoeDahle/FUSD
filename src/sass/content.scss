@@ -101,10 +101,16 @@ $select-padding: 4px;
   border-radius: 4px;
 }
 
+.Content-step-4 {
+  margin-top: 4.5em;
+  // padding-top: 15em;
+  // left: 50%;
+}
+
 .Content-step-4 > tbody {
   position: relative;
-  left: 50%;
   text-align: center;
+  left: 50%;
 }
 
 .Content-step-4-header {
@@ -135,13 +141,27 @@ $select-padding: 4px;
 
 .button {
   margin-top: 10px;
-  padding: 6px 25px;
-  background-color: rgba(64, 128, 191, 0.8);
+  padding: 10px 35px;
+  background-color: rgba(64, 128, 191, 0.5);
   border: none;
-  box-shadow: 2px 2px 5px #1e1e1e;
+  box-shadow: 2px 2px 5px rgba(30, 30, 30, 0.5);
   border-radius: 4px;
 }
 
 .button:hover {
-  box-shadow: 2px 2px 5px #e1e1e1;
+  background-color: rgba(64 , 128, 191, 0.8);
+  box-shadow: 4px 4px 5px rgba(30, 30, 30, 0.8);
+  transition-duration: 0.4s;
+  z-index: 10;
+}
+
+.button-3 {
+  position: relative;
+  left: 80%;
+  bottom: 10px;
+}
+
+.button-4 {
+  position: fixed;
+  left: calc(50% - 50px);
 }
