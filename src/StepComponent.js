@@ -17,6 +17,11 @@ var StepComponent = React.createClass({
         return this.setState({step: this.state.step + 1});
       }
     },
+
+    onSelect: function(e){
+        return this.setState({step: this.state.step + 1});
+    },
+
     render: function(){
       return (
         <div className="Step_Component">
@@ -34,7 +39,8 @@ var StepComponent = React.createClass({
 
           <ContentComponent
             dataProp={this.props.data}
-            slideProp={this.state.step} />
+            slideProp={this.state.step}
+            onChange={this.onSelect} />
 
           {this.checkMark}
         </div>

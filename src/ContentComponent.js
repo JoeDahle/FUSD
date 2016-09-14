@@ -9,7 +9,16 @@ var ContentComponent = React.createClass({
     }
   },
 
+  propTypes: {
+    onChange: React.PropTypes.func
+  },
+
+  handleNextClick: function(){
+    return this.props.onChange()
+  },
+
   change: function(event) {
+    this.handleNextClick();
     return this.setState({value: event.target.value});
   },
 
@@ -45,9 +54,10 @@ var ContentComponent = React.createClass({
         <div className="Content-step-2">
           {schoolNodes}
           <p>Open the WOWSlider application</p>
-          <p>Open the publish tab</p>
+          <p>Open 'Publish'</p>
           <p>Select the 'Publish to FTP' option</p>
           <p>Select Edit</p>
+          <button className="button" onClick={this.handleNextClick}>Next</button>
         </div>
       );
     }
@@ -58,14 +68,15 @@ var ContentComponent = React.createClass({
           path = data.path;
 
           return (
-            <table className="Content-step-3">
+            <table key={i} className="Content-step-3">
               <caption className="Content-step-3-header" key={"op-" + i}>{data.name}</caption>
+              <p>Click 'Add New Location'</p>
               <tr className="Content-step-3-table">
-                <th className="Content-step-3-table-header">Location</th>
+                <th className="Content-step-3-table-header">Location Name</th>
                 <td className="Content-step-3-desc">{data.name}</td>
               </tr>
               <tr className="Content-step-3-table">
-                <th className="Content-step-3-table-header">Server</th>
+                <th className="Content-step-3-table-header">Server FTP://</th>
                 <td className="Content-step-3-desc">10.3.0.50</td>
               </tr>
               <tr className="Content-step-3-table">
@@ -73,8 +84,8 @@ var ContentComponent = React.createClass({
                 <td className="Content-step-3-desc">21</td>
               </tr>
               <tr className="Content-step-3-table">
-                <th className="Content-step-3-table-header">User/Pass</th>
-                <td className="Content-step-3-desc">Your user/pass</td>
+                <th className="Content-step-3-table-header">Username/Password</th>
+                <td className="Content-step-3-desc">Your username/password</td>
               </tr>
             </table>
           );
@@ -82,21 +93,29 @@ var ContentComponent = React.createClass({
       });
 
       return (
-        <div>{schoolNodes}</div>
+        <div>
+          {schoolNodes}
+          <button className="button" onClick={this.handleNextClick}>Next</button>
+        </div>
       );
     }
 
     if(this.props.slideProp == 4) {
       return (
-        <table className="Content-step-4">
-          <caption className="Content-step-4-caption">Select your newly created FTP site from the dropdown menu</caption>
-          <tbody>
-            <tr className="Content-step-4-table">
-              <th className="Content-step-4-header">FTP File Path</th>
-              <td className="Content-step-4-desc">/{this.state.value}/Slider/</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="Content-step-4-container">
+          <p>Click 'Close'</p>
+          <p>Select your newly created FTP site</p>
+          <table className="Content-step-4">
+            <tbody>
+              <tr className="Content-step-4-table">
+                <th className="Content-step-4-header">FTP File Path</th>
+                <td className="Content-step-4-desc">/{this.state.value}/Slider/</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Click 'Apply/Publish'</p>
+          <button className="button" onClick={this.handleNextClick}>Next</button>
+        </div>
       );
     }
 

@@ -19,6 +19,7 @@ body {
 
 .App_main {
     background: $content-background-color;
+    max-width: 80em;
     width: 50%;
     border: $accent-color 1px solid;
     border-radius: 5px;
@@ -26,5 +27,5 @@ body {
     position: fixed;
     top: 5em;
     left: 25%;
-    height: 20em;
+    height: 25em;
 }

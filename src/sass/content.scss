@@ -50,6 +50,16 @@ $select-padding: 4px;
   text-align: center;
 }
 
+.Content-step-3 > p {
+  position: relative;
+  width: 100%;
+  left: 50%;
+  padding: 4px 10px;
+  background-color: #1e1e1e;
+  color: #e1e1e1;
+  border-radius: 4px;
+}
+
 .Content-step-3-table-header {
   text-align: left;
   padding: 6px;
@@ -67,6 +77,17 @@ $select-padding: 4px;
   width: 70%;
   left: 15%;
   text-align: center;
+}
+
+.Content-step-4-container > p {
+  position: relative;
+  text-align: center;
+  width: 50%;
+  left: 25%;
+  padding: 4px 10px;
+  background-color: #1e1e1e;
+  color: #e1e1e1;
+  border-radius: 4px;
 }
 
 .Content-step-4-caption {
@@ -110,4 +131,17 @@ $select-padding: 4px;
 
 .Content-step-5-done {
   font-size: 2em;
+}
+
+.button {
+  margin-top: 10px;
+  padding: 6px 25px;
+  background-color: rgba(64, 128, 191, 0.8);
+  border: none;
+  box-shadow: 2px 2px 5px #1e1e1e;
+  border-radius: 4px;
+}
+
+.button:hover {
+  box-shadow: 2px 2px 5px #e1e1e1;
 }
