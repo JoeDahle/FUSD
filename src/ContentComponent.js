@@ -91,6 +91,13 @@ var ContentComponent = React.createClass({
           );
         }
       });
+      if(that.state.value == 'select'){
+        return (
+          <div className="Content-step-3-no-school">
+            <p>You didn't select a school.</p>
+          </div>
+        );
+      }
 
       return (
         <div>

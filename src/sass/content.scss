@@ -16,7 +16,7 @@ $text-color: #e1e1e1;
     position: relative;
 }
 
-.Content-step-1.
+.Content-step-1,
 .Content-step-2,
 .Content-step-3,
 .Content-step-4,
@@ -75,6 +75,17 @@ $text-color: #e1e1e1;
   text-align: right;
   padding: 6px;
   border-bottom: 1px solid black;
+}
+
+.Content-step-3-no-school {
+  position: relative;
+  width: 50%;
+  left: 25%;
+  padding: 4px 10px;
+  background-color: $command-background-color;
+  color: $text-color;
+  border-radius: 4px;
+  text-align: center;
 }
 
 .Content-step-4 {
