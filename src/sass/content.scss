@@ -4,6 +4,8 @@ $select-border-color: unquote("rgba(#{$color-black}, 0.12)") !default;
 $select-font-size: 16px;
 $select-color: unquote("rgba(#{$color-black}, 0.8)") !default;
 $select-padding: 4px;
+$command-background-color: rgba(30, 30, 30, 0.8);
+$text-color: #e1e1e1;
 
 .Content-step-1,
 .Content-step-2,
@@ -14,7 +16,11 @@ $select-padding: 4px;
     position: relative;
 }
 
-.Content-step-1 {
+.Content-step-1.
+.Content-step-2,
+.Content-step-3,
+.Content-step-4,
+.Content-step-5 {
   text-align: center;
 }
 
@@ -29,10 +35,8 @@ $select-padding: 4px;
     color: $select-color;
     border: none;
     border-bottom: 1px solid orange;
-}
-
-.Content-step-2 {
-  text-align: center;
+    cursor: pointer;
+    cursor: hand;
 }
 
 .Content-step-2 > p {
@@ -40,8 +44,8 @@ $select-padding: 4px;
   width: 50%;
   left: 25%;
   padding: 4px 10px;
-  background-color: #1e1e1e;
-  color: #e1e1e1;
+  background-color: $command-background-color;
+  color: $text-color;
   border-radius: 4px;
 }
 
@@ -55,8 +59,8 @@ $select-padding: 4px;
   width: 100%;
   left: 50%;
   padding: 4px 10px;
-  background-color: #1e1e1e;
-  color: #e1e1e1;
+  background-color: $command-background-color;
+  color: $text-color;
   border-radius: 4px;
 }
 
@@ -76,7 +80,7 @@ $select-padding: 4px;
 .Content-step-4 {
   width: 70%;
   left: 15%;
-  text-align: center;
+  margin-top: 4.5em;
 }
 
 .Content-step-4-container > p {
@@ -85,8 +89,8 @@ $select-padding: 4px;
   width: 50%;
   left: 25%;
   padding: 4px 10px;
-  background-color: #1e1e1e;
-  color: #e1e1e1;
+  background-color: $command-background-color;
+  color: $text-color;
   border-radius: 4px;
 }
 
@@ -96,15 +100,9 @@ $select-padding: 4px;
   margin-bottom: 1.5em;
   width: 100%;
   padding: 6px 10px;
-  background-color: #1e1e1e;
-  color: #e1e1e1;
+  background-color: $command-background-color;
+  color: $text-color;
   border-radius: 4px;
-}
-
-.Content-step-4 {
-  margin-top: 4.5em;
-  // padding-top: 15em;
-  // left: 50%;
 }
 
 .Content-step-4 > tbody {
@@ -125,10 +123,6 @@ $select-padding: 4px;
   border-bottom: 1px solid black;
 }
 
-.Content-step-5 {
-  text-align: center;
-}
-
 .checkMark {
     position: relative;
     top: 30px;
@@ -146,6 +140,9 @@ $select-padding: 4px;
   border: none;
   box-shadow: 2px 2px 5px rgba(30, 30, 30, 0.5);
   border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+  transition-duration: 0.4s;
 }
 
 .button:hover {

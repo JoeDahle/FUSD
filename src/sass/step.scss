@@ -15,6 +15,18 @@
 .fa-arrow-left,
 .Step_current-p {
     font-size: 2em;
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none;   /* Chrome/Safari/Opera */
+       -khtml-user-select: none;    /* Konqueror */
+         -moz-user-select: none;      /* Firefox */
+          -ms-user-select: none;       /* Internet Explorer/Edge */
+              user-select: none;
+}
+
+.fa-arrow-left,
+.fa-arrow-right {
+  cursor: pointer;
+  cursor: hand;
 }
 
 hr {
