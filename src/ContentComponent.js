@@ -5,7 +5,8 @@ import style from './sass/content.scss';
 var ContentComponent = React.createClass({
   getInitialState: function() {
     return {
-      value: "select"
+      value: "select",
+      abbr: "abbr"
     }
   },
 
@@ -18,8 +19,16 @@ var ContentComponent = React.createClass({
   },
 
   change: function(event) {
+    let that = this;
     this.handleNextClick();
-    return this.setState({value: event.target.value});
+    this.setState({value: event.target.value});
+    // console.log(this.props.dataProp);
+    this.props.dataProp.school.map(function(data, i){
+      if(data.name == event.target.value){
+        that.setState({abbr: data.abbr})
+      }
+    });
+    return true;
   },
 
   render: function(){
@@ -27,13 +36,14 @@ var ContentComponent = React.createClass({
     var path;
     if(this.props.slideProp == 1) {
       let schoolNodes = this.props.dataProp.school.map(function(data, i){
-        return <option key={"op-" + i} value={data.abbr}>{data.name}</option>
+        return <option key={"op-" + i} value={data.name}>{data.name}</option>
       });
 
       return(
         <div className="Content-step-1">
           <h1 className="Content-step-1-header">Choose Your School</h1>
-          <select className="Content-step-1-select" onChange={this.change} value={this.state.value}>
+          <select className="Content-step-1-select" onChange={this.change}
+            value={this.state.value}>
             <option value="select" disabled>Select</option>
             {schoolNodes}
           </select>
@@ -43,7 +53,7 @@ var ContentComponent = React.createClass({
 
     if(this.props.slideProp == 2) {
       let schoolNodes = this.props.dataProp.school.map(function(data, i){
-        if (that.state.value == data.abbr) {
+        if (that.state.value == data.name) {
           return (
             <h1 className="Content-step-2-header" key={"op-" + i}>{data.name}</h1>
           )
@@ -64,7 +74,7 @@ var ContentComponent = React.createClass({
 
     if(this.props.slideProp == 3) {
       let schoolNodes = this.props.dataProp.school.map(function(data, i){
-        if(that.state.value == data.abbr){
+        if(that.state.value == data.name){
           path = data.path;
 
           return (
@@ -111,12 +121,13 @@ var ContentComponent = React.createClass({
       return (
         <div className="Content-step-4-container">
           <p>Click 'Close'</p>
-          <p>Select your newly created FTP site</p>
+          <p>Select '{that.state.value}' from the dropdown</p>
+          <p>Find 'FTP Folder Path' and enter: </p>
           <table className="Content-step-4">
             <tbody>
               <tr className="Content-step-4-table">
-                <th className="Content-step-4-header">FTP File Path</th>
-                <td className="Content-step-4-desc">/{this.state.value}/Slider/</td>
+                <th className="Content-step-4-header">FTP Folder Path</th>
+                <td className="Content-step-4-desc">/{this.state.abbr}/Slider/</td>
               </tr>
             </tbody>
           </table>
