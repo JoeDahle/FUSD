@@ -1,67 +1,67 @@
 {
   "school": [
     {
-      "name": "Anthem",
+      "name": "Anthem K-8",
       "listName": "anthem",
       "id": 1,
       "abbr": "an",
       "path": "/an/Slider/wowslider.html"
     },
     {
-      "name": "Magma Ranch",
-      "listName": "magma",
-      "id": 2,
-      "abbr": "mg",
-      "path": "/mg/Slider/wowslider.html"
-    },
-    {
-      "name": "Florence",
-      "listName": "florencek8",
-      "id": 3,
-      "abbr": "fk8",
-      "path": "/fk8/Slider/wowslider.html"
-    },
-    {
-      "name": "Walker Butte",
-      "listName": "walkerbutte",
-      "id": 4,
-      "abbr": "wb",
-      "path": "/wb/Slider/wowslider.html"
-    },
-    {
-      "name": "Circle Cross Ranch",
+      "name": "Circle Cross Ranch K-8",
       "listName": "circlecross",
-      "id": 5,
+      "id": 2,
       "abbr": "ccr",
       "path": "/ccr/Slider/wowslider.html"
     },
     {
-      "name": "Skyline Ranch",
-      "listName": "skyline",
-      "id": 6,
-      "abbr": "sr",
-      "path": "/sr/Slider/wowslider.html"
-    },
-    {
-      "name": "Copper Basin",
+      "name": "Copper Basin K-8",
       "listName": "copperbasin",
-      "id": 7,
+      "id": 3,
       "abbr": "cb",
       "path": "/cb/Slider/wowslider.html"
     },
     {
-      "name": "San Tan Foothills",
-      "listName": "santanfoothills",
-      "id": 8,
-      "abbr": "stfhs",
-      "path": "/stfhs/Slider/wowslider.html"
+      "name": "Florence K-8",
+      "listName": "florencek8",
+      "id": 4,
+      "abbr": "fk8",
+      "path": "/fk8/Slider/wowslider.html"
     },
     {
-      "name": "San Tan Heights",
+      "name": "Magma Ranch K-8",
+      "listName": "magma",
+      "id": 5,
+      "abbr": "mg",
+      "path": "/mg/Slider/wowslider.html"
+    },
+    {
+      "name": "San Tan Heights K-8",
       "listName": "santanheights",
-      "id": 9,
+      "id": 6,
       "abbr": "sth",
       "path": "/sth/Slider/wowslider.html"
+    },
+    {
+      "name": "Skyline Ranch K-8",
+      "listName": "skyline",
+      "id": 7,
+      "abbr": "sr",
+      "path": "/sr/Slider/wowslider.html"
+    },
+    {
+      "name": "Walker Butte K-8",
+      "listName": "walkerbutte",
+      "id": 8,
+      "abbr": "wb",
+      "path": "/wb/Slider/wowslider.html"
+    },
+    {
+      "name": "Florence High",
+      "listName": "florencehigh",
+      "id": 9,
+      "abbr": "fhs",
+      "path": "/fhs/Slider/wowslider.html"
     },
     {
       "name": "Poston Butte",
@@ -71,11 +71,11 @@
       "path": "/pbhs/Slider/wowslider.html"
     },
     {
-      "name": "Florence High",
-      "listName": "florencehigh",
+      "name": "San Tan Foothills",
+      "listName": "santanfoothills",
       "id": 11,
-      "abbr": "fhs",
-      "path": "/fhs/Slider/wowslider.html"
+      "abbr": "stfhs",
+      "path": "/stfhs/Slider/wowslider.html"
     }
   ]
 }
